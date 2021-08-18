@@ -327,7 +327,7 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ml-incr-binary-classification/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/stdlib
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
 [euclidean-norm]: https://en.wikipedia.org/wiki/Norm_%28mathematics%29#Euclidean_norm
 

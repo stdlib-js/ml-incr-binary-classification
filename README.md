@@ -272,6 +272,22 @@ console.log( 'x = [%d, %d]; lp = %d', x.get( 2, 0 ), x.get( 2, 1 ), out.get( 2 )
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/ml/incr/sgd-regression`][@stdlib/ml/incr/sgd-regression]: online regression via stochastic gradient descent (SGD).
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -338,6 +354,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [@zhang:2004a]: https://doi.org/10.1145/1015330.1015332
 
 [@shalevshwartz:2011a]: https://doi.org/10.1007/s10107-010-0420-4
+
+<!-- <related-links> -->
+
+[@stdlib/ml/incr/sgd-regression]: https://github.com/stdlib-js/stdlib
+
+<!-- </related-links> -->
 
 </section>
 

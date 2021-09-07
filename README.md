@@ -280,7 +280,7 @@ console.log( 'x = [%d, %d]; lp = %d', x.get( 2, 0 ), x.get( 2, 1 ), out.get( 2 )
 
 ## See Also
 
--   [`@stdlib/ml/incr/sgd-regression`][@stdlib/ml/incr/sgd-regression]: online regression via stochastic gradient descent (SGD).
+-   <span class="package-name">[`@stdlib/ml/incr/sgd-regression`][@stdlib/ml/incr/sgd-regression]</span><span class="delimiter">: </span><span class="description">online regression via stochastic gradient descent (SGD).</span>
 
 </section>
 
@@ -357,7 +357,7 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/ml/incr/sgd-regression]: https://github.com/stdlib-js/stdlib
+[@stdlib/ml/incr/sgd-regression]: https://github.com/stdlib-js/ml-incr-sgd-regression
 
 <!-- </related-links> -->
 

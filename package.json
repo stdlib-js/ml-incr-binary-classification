@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ml-incr-binary-classification",
-  "version": "0.0.0",
+  "version": "0.0.6",
   "description": "Incrementally perform binary classification using stochastic gradient descent (SGD).",
   "license": "Apache-2.0",
   "author": {

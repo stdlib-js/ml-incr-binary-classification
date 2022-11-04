@@ -24,30 +24,38 @@ limitations under the License.
 
 > Incrementally perform binary classification using [stochastic gradient descent][stochastic-gradient-descent] (SGD).
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/ml-incr-binary-classification
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var incrBinaryClassification = require( '@stdlib/ml-incr-binary-classification' );
+incrBinaryClassification = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var incrBinaryClassification = require( 'path/to/vendor/umd/ml-incr-binary-classification/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.incrBinaryClassification;
+})();
+</script>
 ```
 
 #### incrBinaryClassification( N\[, options] )
@@ -216,12 +224,17 @@ Given a feature vector `x = [x_0, x_1, ...]` and model coefficients `c = [c_0, c
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var normal = require( '@stdlib/random-base-normal' );
-var binomial = require( '@stdlib/random-base-binomial' );
-var array = require( '@stdlib/ndarray-array' );
-var exp = require( '@stdlib/math-base-special-exp' );
-var incrBinaryClassification = require( '@stdlib/ml-incr-binary-classification' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-normal@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-binomial@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-exp@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 // Create a new accumulator:
 var acc = incrBinaryClassification( 2, {
@@ -262,6 +275,11 @@ out = acc.predict( x, 'linear' );
 console.log( 'x = [%d, %d]; lp = %d', x.get( 0, 0 ), x.get( 0, 1 ), out.get( 0 ) );
 console.log( 'x = [%d, %d]; lp = %d', x.get( 1, 0 ), x.get( 1, 1 ), out.get( 1 ) );
 console.log( 'x = [%d, %d]; lp = %d', x.get( 2, 0 ), x.get( 2, 1 ), out.get( 2 ) );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -363,7 +381,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ml-incr-binary-classification/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd
 
 [euclidean-norm]: https://en.wikipedia.org/wiki/Norm_%28mathematics%29#Euclidean_norm
 
@@ -377,7 +395,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/ml/incr/sgd-regression]: https://github.com/stdlib-js/ml-incr-sgd-regression
+[@stdlib/ml/incr/sgd-regression]: https://github.com/stdlib-js/ml-incr-sgd-regression/tree/umd
 
 <!-- </related-links> -->
 

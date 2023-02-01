@@ -59,7 +59,7 @@
     "@stdlib/ndarray-base-shape2strides": "^0.0.x",
     "@stdlib/ndarray-base-vind2bind": "^0.0.x",
     "@stdlib/ndarray-ctor": "^0.0.x",
-    "@stdlib/string-format": "^0.0.x",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.x",
     "@stdlib/types": "^0.0.x",
     "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.0.x",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.x"

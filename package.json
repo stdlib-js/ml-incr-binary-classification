@@ -65,9 +65,9 @@
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.0"
   },
   "devDependencies": {
-    "@stdlib/ndarray-array": "^0.0.9",
-    "@stdlib/random-base-binomial": "^0.0.6",
-    "@stdlib/random-base-normal": "^0.0.6",
+    "@stdlib/ndarray-array": "^0.1.0",
+    "@stdlib/random-base-binomial": "^0.1.0",
+    "@stdlib/random-base-normal": "^0.1.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git"

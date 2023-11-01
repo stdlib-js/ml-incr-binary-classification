@@ -35,7 +35,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/array-float64": "^0.1.0",
+    "@stdlib/array-float64": "^0.1.1",
     "@stdlib/assert-contains": "^0.1.0",
     "@stdlib/assert-has-own-property": "^0.1.1",
     "@stdlib/assert-is-array-like-object": "^0.1.0",

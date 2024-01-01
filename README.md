@@ -35,30 +35,14 @@ limitations under the License.
 
 > Incrementally perform binary classification using [stochastic gradient descent][stochastic-gradient-descent] (SGD).
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/ml-incr-binary-classification
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var incrBinaryClassification = require( '@stdlib/ml-incr-binary-classification' );
+import incrBinaryClassification from 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@deno/mod.js';
 ```
 
 #### incrBinaryClassification( N\[, options] )
@@ -98,7 +82,7 @@ The function accepts the following `options`:
 By default, the model contains an intercept term. To omit the intercept, set the `intercept` option to `false`:
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
 
 // Create a model with the intercept term:
 var acc = incrBinaryClassification( 2, {
@@ -126,7 +110,7 @@ dim = coefs.length;
 If provided a feature vector `x` and response value `y` (either `+1` or `-1`), the accumulator function updates a binary classification model; otherwise, the accumulator function returns the current binary classification model coefficients.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
 
 // Create an accumulator:
 var acc = incrBinaryClassification( 2 );
@@ -158,7 +142,7 @@ coefs = acc();
 Computes predicted response values for one or more observation vectors `X`.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
 
 // Create a model with the intercept term:
 var acc = incrBinaryClassification( 2 );
@@ -174,7 +158,7 @@ Provided an [`ndarray`][@stdlib/ndarray/ctor] having shape `(..., N)`, where `N`
 By default, the method returns the predict label (`type='label'`). In order to return a prediction probability of a `+1` response value given either the logistic (`log`) or modified Huber (`modifiedHuber`) loss functions, set the second argument to `'probability'`.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
 
 // Create a model with the intercept term:
 var acc = incrBinaryClassification( 2, {
@@ -190,7 +174,7 @@ var phat = acc.predict( array( [ 0.5, 2.0 ] ), 'probability' );
 In order to return the linear predictor (i.e., the signed distance to the hyperplane, which is computed as the dot product between the model coefficients and the provided feature vector `x`, plus the intercept), set the second argument to `'linear'`.
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
 
 // Create a model with the intercept term:
 var acc = incrBinaryClassification( 2, {
@@ -228,11 +212,11 @@ Given a feature vector `x = [x_0, x_1, ...]` and model coefficients `c = [c_0, c
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var normal = require( '@stdlib/random-base-normal' );
-var binomial = require( '@stdlib/random-base-binomial' );
-var array = require( '@stdlib/ndarray-array' );
-var exp = require( '@stdlib/math-base-special-exp' );
-var incrBinaryClassification = require( '@stdlib/ml-incr-binary-classification' );
+import normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-normal@deno/mod.js';
+import binomial from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-binomial@deno/mod.js';
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import exp from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-exp@deno/mod.js';
+import incrBinaryClassification from 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@deno/mod.js';
 
 // Create a new accumulator:
 var acc = incrBinaryClassification( 2, {
@@ -314,7 +298,7 @@ console.log( 'x = [%d, %d]; lp = %d', x.get( 2, 0 ), x.get( 2, 1 ), out.get( 2 )
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -374,7 +358,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ml-incr-binary-classification/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
 
 [euclidean-norm]: https://en.wikipedia.org/wiki/Norm_%28mathematics%29#Euclidean_norm
 
@@ -388,7 +372,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/ml/incr/sgd-regression]: https://github.com/stdlib-js/ml-incr-sgd-regression
+[@stdlib/ml/incr/sgd-regression]: https://github.com/stdlib-js/ml-incr-sgd-regression/tree/deno
 
 <!-- </related-links> -->
 

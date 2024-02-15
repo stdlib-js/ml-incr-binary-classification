@@ -44,6 +44,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+incrBinaryClassification = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ml-incr-binary-classification/tags). For example,
+
+```javascript
 incrBinaryClassification = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@v0.2.0-umd/browser.js' )
 ```
 
@@ -56,7 +61,7 @@ var incrBinaryClassification = require( 'path/to/vendor/umd/ml-incr-binary-class
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -243,7 +248,7 @@ Given a feature vector `x = [x_0, x_1, ...]` and model coefficients `c = [c_0, c
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-binomial@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-exp@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 

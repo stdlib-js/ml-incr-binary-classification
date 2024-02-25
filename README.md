@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import incrBinaryClassification from 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@deno/mod.js';
+import incrBinaryClassification from 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@v0.2.1-deno/mod.js';
 ```
 
 #### incrBinaryClassification( N\[, options] )
@@ -216,7 +216,7 @@ import normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-normal@den
 import binomial from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-binomial@deno/mod.js';
 import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
 import exp from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-exp@deno/mod.js';
-import incrBinaryClassification from 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@deno/mod.js';
+import incrBinaryClassification from 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@v0.2.1-deno/mod.js';
 
 // Create a new accumulator:
 var acc = incrBinaryClassification( 2, {

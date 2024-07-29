@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import incrBinaryClassification from 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ml-incr-binary-classification/tags). For example,
+
+```javascript
 import incrBinaryClassification from 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@v0.2.2-esm/index.mjs';
 ```
 
@@ -221,7 +226,7 @@ import normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-normal@esm
 import binomial from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-binomial@esm/index.mjs';
 import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@esm/index.mjs';
 import exp from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-exp@esm/index.mjs';
-import incrBinaryClassification from 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@v0.2.2-esm/index.mjs';
+import incrBinaryClassification from 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@esm/index.mjs';
 
 // Create a new accumulator:
 var acc = incrBinaryClassification( 2, {

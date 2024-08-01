@@ -58,7 +58,7 @@
     "@stdlib/ndarray-base-numel": "^0.2.2",
     "@stdlib/ndarray-base-shape2strides": "^0.2.2",
     "@stdlib/ndarray-base-vind2bind": "^0.2.2",
-    "@stdlib/ndarray-ctor": "^0.2.1",
+    "@stdlib/ndarray-ctor": "^0.2.2",
     "@stdlib/string-format": "^0.2.2",
     "@stdlib/types": "^0.3.2",
     "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.3",

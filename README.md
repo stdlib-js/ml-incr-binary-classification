@@ -35,43 +35,32 @@ limitations under the License.
 
 > Incrementally perform binary classification using [stochastic gradient descent][stochastic-gradient-descent] (SGD).
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ml-incr-binary-classification
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-incrBinaryClassification = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ml-incr-binary-classification/tags). For example,
-
-```javascript
-incrBinaryClassification = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@v0.2.2-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var incrBinaryClassification = require( 'path/to/vendor/umd/ml-incr-binary-classification/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.incrBinaryClassification;
-})();
-</script>
+var incrBinaryClassification = require( '@stdlib/ml-incr-binary-classification' );
 ```
 
 #### incrBinaryClassification( N\[, options] )
@@ -240,17 +229,12 @@ Given a feature vector `x = [x_0, x_1, ...]` and model coefficients `c = [c_0, c
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-normal@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-binomial@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-exp@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ml-incr-binary-classification@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var normal = require( '@stdlib/random-base-normal' );
+var binomial = require( '@stdlib/random-base-binomial' );
+var array = require( '@stdlib/ndarray-array' );
+var exp = require( '@stdlib/math-base-special-exp' );
+var incrBinaryClassification = require( '@stdlib/ml-incr-binary-classification' );
 
 // Create a new accumulator:
 var acc = incrBinaryClassification( 2, {
@@ -291,11 +275,6 @@ out = acc.predict( x, 'linear' );
 console.log( 'x = [%d, %d]; lp = %d', x.get( 0, 0 ), x.get( 0, 1 ), out.get( 0 ) );
 console.log( 'x = [%d, %d]; lp = %d', x.get( 1, 0 ), x.get( 1, 1 ), out.get( 1 ) );
 console.log( 'x = [%d, %d]; lp = %d', x.get( 2, 0 ), x.get( 2, 1 ), out.get( 2 ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -367,8 +346,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/ml-incr-binary-classification.svg
 [npm-url]: https://npmjs.org/package/@stdlib/ml-incr-binary-classification
 
-[test-image]: https://github.com/stdlib-js/ml-incr-binary-classification/actions/workflows/test.yml/badge.svg?branch=v0.2.2
-[test-url]: https://github.com/stdlib-js/ml-incr-binary-classification/actions/workflows/test.yml?query=branch:v0.2.2
+[test-image]: https://github.com/stdlib-js/ml-incr-binary-classification/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/ml-incr-binary-classification/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ml-incr-binary-classification/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/ml-incr-binary-classification?branch=main
@@ -400,7 +379,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ml-incr-binary-classification/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
 [euclidean-norm]: https://en.wikipedia.org/wiki/Norm_%28mathematics%29#Euclidean_norm
 
@@ -414,7 +393,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/ml/incr/sgd-regression]: https://github.com/stdlib-js/ml-incr-sgd-regression/tree/umd
+[@stdlib/ml/incr/sgd-regression]: https://github.com/stdlib-js/ml-incr-sgd-regression
 
 <!-- </related-links> -->
 
